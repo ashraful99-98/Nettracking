@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/5904703.webp">
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Nettracking</title>
+</head>
+<body>
+
+       <!-- header section starts  -->
+       
+<nav class="bg-[#12141D]">
+    <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div class="relative flex h-16 items-center justify-between">
+        <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
+          <!-- Mobile menu button-->
+          <button type="button" class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white" aria-controls="mobile-menu" aria-expanded="false">
+            <span class="absolute -inset-0.5"></span>
+            <span class="sr-only">Open main menu</span>
+            <!--
+              Icon when menu is closed.
+  
+              Menu open: "hidden", Menu closed: "block"
+            -->
+            <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <!--
+              Icon when menu is open.
+  
+              Menu open: "block", Menu closed: "hidden"
+            -->
+            <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
+          <div class="flex flex-shrink-0 items-center">
+            <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500" alt="Your Company">
+          </div>
+          <div class="hidden sm:ml-6 sm:block">
+            <div class="flex space-x-4">
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+              <a href="#" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Features</a>
+              <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Pricing</a>
+              <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">How it works</a>
+              <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Knowledge base</a>
+              <a href="#" class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Knowledge base</a>
+            </div>
+          </div>
+        </div>
+        <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+            <button type="button" class=" px-3 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white mr-4 rounded font-bold ">Sign In</button>
+            <button type="button" class=" px-3 py-2 text-sm text-black bg-white hover:bg-gray-700 hover:text-white rounded font-bold ">Sign Up</button>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Mobile menu, show/hide based on menu state. -->
+    <div class="sm:hidden" id="mobile-menu">
+      <div class="space-y-1 px-2 pb-3 pt-2">
+        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+        <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Dashboard</a>
+        <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
+        <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
+        <a href="#" class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
+      </div>
+    </div>
+  </nav>
+
+       <!-- <header class="header">
+
+        <div id="menu-btn" class="fas fa-bars icons"></div>
+       
+        <nav class="navbar">
+           <a href="#home">home</a>
+           <a href="#menu">menu</a>
+           <a href="#about">about</a>
+           <span class="space"></span>
+           <a href="#reviews">reviews</a>
+           <a href="#contact">contact</a>
+           <a href="#blogs">blogs</a>
+        </nav>
+  
+        <a href="#" class="fas fa-shopping-cart icons"></a>
+  
+        <a href="#home" class="logo"><img src="images/5904703.webp" alt=""></a>
+  
+     </header> -->
+
+ <!-- header section ends  -->
+
+ <!-- landing page section start  -->
+
+ <div class="home-div bg-[#12141D]">
+    <div class="mx-auto max-w-2xl py-14  px-2 sm:px-6 lg:px-8">
+        <h1> Content marketing solution & idea of your business</h1>
+        <p class="mt-2">Nettracking is a content marketing solution that tracks the effectiveness of your blog,</p>
+        <div class="home-btn my-4">
+            <a href="" class="btn-tag py-2 px-3 rounded mr-4">Explore Platform <span class=" ml-1 align-middle"><i class="fa fa-angle-double-right"></i></span></a>
+            <a href=""  class="bg-[#22222B] text-white py-2 px-5 rounded learn-more-btn">Learn More</a>
+        </div>
+    </div>
+ </div>
+
+ <!-- Key features -->
+
+ <div class="features-div bg-[#12141D]">
+    <div class="mx-auto max-w-7xl py-14  px-2 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl  text-center mb-20 ">
+            <h1>Key features</h1>
+            <p class="mt-2">NetTracking™ has quickly become the go-to content marketing <br> solution for over 600 clients around the world</p>
+        </div>
+        <div class="grid grid-cols-3 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-20 lg:gap-20 md:gap-18 sm:gap-6 bg-[#1E2029] rounded-lg py-24 px-24">
+            <div class="">
+                <div class="mb-4 p-2  rounded-full bg-[#0F161B] w-[61px] h-[61px]">
+                    <i class='fas fa-book-open w-full h-full text-white  flex justify-center items-center
+                    '></i>
+                </div>
+                <div>
+                    <h5 class="mb-2 text-[#FFFFFF] text-[20px] font-600">Real-Time Email Alerts</h5>
+                    <p class="text-[#696B76] text-[16px] font-400">NetTracking" is a very powerful Web 2.0 site search engine allows you to find  email allerts</p>
+                </div>
+            </div>
+
+            <div class="">
+                <div class="mb-4 p-2  rounded-full bg-[#0F161B] w-[61px] h-[61px]">
+                    <i class='fas fa-desktop w-full h-full text-white  flex justify-center items-center
+                    '></i>
+                </div>
+                <div>
+                    <h5 class="mb-2 text-[#FFFFFF] text-[20px] font-600">Monitor Inbound Traffic</h5>
+                    <p class="text-[#696B76] text-[16px] font-400">The biggest challenge for marketers is being heard inbound traffice in market.</p>
+                </div>
+            </div>
+
+            <div class="">
+                <div class="mb-4 p-2  rounded-full bg-[#0F161B] w-[61px] h-[61px]">
+                    <i class='fas fa-circle  w-full h-full text-white  flex justify-center items-center
+                    '></i>
+                </div>
+                <div>
+                    <h5 class="mb-2 text-[#FFFFFF] text-[20px] font-600">Track Multiple Sites</h5>
+                    <p class="text-[#696B76] text-[16px] font-400">Nettracking gives you an innovative web-based tool that manages multiple sites</p>
+                </div>
+            </div>
+
+            <div class="">
+                <div class="mb-4 p-2  rounded-full bg-[#0F161B] w-[61px] h-[61px]">
+                    <i class='fas fa-signal w-full h-full text-white  flex justify-center items-center
+                    '></i>
+                </div>
+                <div>
+                    <h5 class="mb-2 text-[#FFFFFF] text-[20px] font-600">Aggregate Statistics</h5>
+                    <p class="text-[#696B76] text-[16px] font-400">filters and reports on your website's search engine ranking results.</p>
+                </div>
+            </div>
+
+            <div class="">
+                <div class="mb-4 p-2  rounded-full bg-[#0F161B] w-[61px] h-[61px]">
+                    <i class='fas fa-code w-full h-full text-white  flex justify-center items-center
+                    '></i>
+                </div>
+                <div>
+                    <h5 class="mb-2 text-[#FFFFFF] text-[20px] font-600">Edit Exclude</h5>
+                    <p class="text-[#696B76] text-[16px] font-400">In short, nettracking gives you the information that allows you to changes in your website's ranking </p>
+                </div>
+            </div>
+
+            <div class="">
+                <div class="mb-4 p-2  rounded-full bg-[#0F161B] w-[61px] h-[61px]">
+                    <i class='fas fa-book-open w-full h-full text-white  flex justify-center items-center
+                    '></i>
+                    <i class="fa-sharp-duotone fa-solid fa-book-open" style="--fa-primary-color: #ff7300; --fa-secondary-color: #ffffff; --fa-secondary-opacity: 0;"></i>
+                </div>
+                <div>
+                    <h5 class="mb-2 text-[#FFFFFF] text-[20px] font-600">Easy To Implement</h5>
+                    <p class="text-[#696B76] text-[16px] font-400">accurately track organic (or natural) search engine movement over time.</p>
+                </div>
+            </div>
+
+          </div>
+    </div>
+
+ </div>
+
+
+ <!-- Creative solutions -->
+
+ <div class="bg-[#12141D] features-div">
+    <div class="mx-auto max-w-7xl py-10  px-2 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center mb-20">
+            <h1> Creative solutions to expand
+                your business!</h1>
+            <p class="mt-2 text-[16px]">Nettracking is designed with an integrated tracking system that allows customers to track their package</p>
+        </div>
+        <div class="grid grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-10 lg:gap-6 md:gap-8 sm:gap-4">
+           <div class="bg-[#1E2029] px-16 py-10 pt-10 justify-start justify-items-start content-start items-start rounded-3xl h-full">
+            <div class="grid grid-cols-4 gap-2 mb-16">
+                <p class="text-[14px] text-white px-2 py-2 rounded bg-[#2A2C34] hover:bg-[#4F5054] font-[600] text-center cursor-pointer ">Founder</p>
+                <p class="text-[14px] text-white px-2 py-2 rounded bg-[#2A2C34] hover:bg-[#4F5054] font-[600] text-center cursor-pointer ">Blogger</p>
+                <p class="text-[14px] text-white px-2 py-2 rounded bg-[#2A2C34] hover:bg-[#4F5054] font-[600] text-center  cursor-pointer">Marketer</p>
+                <p class="text-[14px] text-white px-2 py-2 rounded bg-[#2A2C34] hover:bg-[#4F5054] font-[600] text-center  cursor-pointer">Agency</p>
+            </div>
+            <div>
+                <h2 class="text-[#fff] text-[24px] font-[600] mb-2">Track the results of <br>
+                    your work</h2>
+                    <br>
+                <p class="mb-8 text-[16px] ">The tracking system sends customers notifications on shipping date status, shipping notification, delivery confirmation, package delivered with time and date, etc.</p>
+                <a href="" class="btn-tag py-2 px-3 rounded mr-4">Explore Platform <span class=" ml-1 align-middle"><i class="fa fa-angle-double-right"></i></span></a>
+            </div>
+              
+           </div>
+           <div class="">
+            <img src="images/case-study6.jpg" alt="" class="h-full rounded-3xl">
+
+           </div>
+        </div>
+    </div>
+ </div>
+
+ <!-- how to work  -->
+
+ <div class=" bg-[#12141D] features-div">
+    <div class="mx-auto max-w-7xl py-14  px-2 sm:px-6 lg:px-8">
+        <div class="mx-auto max-w-2xl text-center mb-20">
+            <h1>How it works</h1>
+        </div>
+        <div class="grid grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10 lg:gap-6 md:gap-8 sm:gap-4 bg-[#1E2029] px-20 py-14 lg:px-20 md:px-10 sm:px-4 rounded-3xl justify-items-center">
+            <div class="justify-start justify-items-start content-start items-start sm:mb-10 ">
+                <div class="p-2  rounded-full bg-[#0F161B] text-[#fff] w-[61px] h-[61px] mb-6">
+                    <p class=' w-full h-full text-[#fff]  flex justify-center items-center font-medium	
+                    '>01</p>
+                </div>
+
+                <div class="w-[250px] lg:w-[250px] md:w-[250px] sm:w-[500px]">
+                    <div class="w-[250px] lg:w-[250px] md:w-[250px] sm:w-[500px] h-[130px] lg:h-[130px] md:h-[130px] sm:h-[200px] bg-[#272932] flex justify-center items-center mb-3 rounded-lg">
+                        <img src="images/set-level.png" alt="" class="w-[139px] sm:w-[260px]  h-[112px] sm:h-full ">
+                    </div>
+                
+                    <h4 class="text-[#fff] text-[24px] font-[600] mb-3">Add Website</h4>
+                  
+                    <p class="text-[16px] text-[#696B76] font-[400] ">Nettracking gives you an innovative web-based tool that manages, filters and reports on your website's</p>
+
+                </div>
+
+            </div>
+
+            <div class="justify-start justify-items-start content-start items-start sm:mb-10 ">
+                <div class="p-2  rounded-full bg-[#0F161B] text-[#fff] w-[61px] h-[61px] mb-6">
+                    <p class=' w-full h-full text-[#fff]  flex justify-center items-center font-medium	
+                    '>02</p>
+                </div>
+
+                <div class="w-[250px] lg:w-[250px] md:w-[250px] sm:w-[500px]">
+                    <div class="w-[250px] lg:w-[250px] md:w-[250px] sm:w-[500px] h-[130px] lg:h-[130px] md:h-[130px] sm:h-[200px] bg-[#272932] flex justify-center items-center mb-3 rounded-lg">
+                        <img src="images/screen.png" alt="" class="">
+                    </div>
+                
+                    <h4 class="text-[#fff] text-[24px] font-[600] mb-3">Get Tracking Code</h4>
+                  
+                    <p class="text-[16px] text-[#696B76] font-[400] ">filters and reports on your website's search engine ranking results. In short, nettracking gives you the information</p>
+
+                </div>
+
+            </div>
+
+            <div class="justify-start justify-items-start content-start items-start sm:mb-10 ">
+                <div class="p-2  rounded-full bg-[#0F161B] text-[#fff] w-[61px] h-[61px] mb-6">
+                    <p class=' w-full h-full text-[#fff]  flex justify-center items-center font-medium	
+                    '>03</p>
+                </div>
+
+                <div class="w-[250px] lg:w-[250px] md:w-[250px] sm:w-[500px]">
+                    <div class="w-[250px] lg:w-[250px] md:w-[250px] sm:w-[500px] h-[130px] lg:h-[130px] md:h-[130px] sm:h-[200px] bg-[#272932] flex justify-center items-center mb-3 rounded-lg">
+                        <img src="images/person3.png" alt="" class="">
+                    </div>
+                
+                    <h4 class="text-[#fff] text-[24px] font-[600] mb-3">Start Tracking</h4>
+                  
+                    <p class="text-[16px] text-[#696B76] font-[400] ">Nettracking gives you an innovative web-based tool that manages multiple sites</p>
+
+                </div>
+
+            </div>
+
+            </div>
+           
+        </div>
+    </div>
+ </div>
+ 
+
+
+      
+    <!-- footer  -->
+     <footer class="footer">
+        <div class="footer-divs">
+            <div class="footer-div">
+                <h4>Nettracking</h4>
+                <p>We saw our customers confusing us with some of the other companies intheindustry</p>
+                <div class="icon-tag">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                </div>
+
+            </div>
+            <div class="footer-div">
+                <h5>Product</h5>
+                <div class="footer-item">
+                    <p>Product</p>
+                    <p>Fearures</p>
+                    <p>Pricing</p>
+                    <p>Case Studies</p>
+                </div>
+            </div>
+            <div class="footer-div">
+                <h5>Service</h5>
+                <div class="footer-item">
+                    <p>Blog</p>
+                    <p>Road Map</p>
+                    <p>Testimonials</p>
+                    <p>Good Tear</p>
+                </div>
+            </div>
+            <div class="footer-div">
+                <h5>Solutions</h5>
+                <div class="footer-item">
+                    <p>Process Management</p>
+                    <p>Request Management</p>
+                    <p>Workflow Management</p>
+                    <p>Finance</p>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="footer-small-test">
+            <small>© Copyright 2024 by Codelabs Digital. All right reserved.</small>
+        </div>
+
+     </footer>
+
+
+     <!-- custom js file link      -->
+   <script src="js/script.js"></script>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+
+   <script>
+
+      AOS.init({
+         duration: 800,
+      });
+
+   </script>
+</body>
+</html>
