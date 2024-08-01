@@ -169,7 +169,7 @@ body {
     color: #FFFFFF;
  }
 
- .features-div p{
+ .features-div .features-p{
     color: #808188;
     font-size: 18px;
     font-weight: 400;
@@ -177,7 +177,7 @@ body {
  }
 
  /* Creative solutions */
- 
+
  .btn-tag{
     background:#FF664F;
     color: #fff;
