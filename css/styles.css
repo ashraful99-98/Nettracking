@@ -222,6 +222,14 @@ body {
 .faq.active {
   border: none;
 }
+/* cna section  */
+.gradient-btn{
+  border-image: linear-gradient(to right, #FF7763 0%, #EA6955 100%) 1;
+  border-width: 15px;
+  border-style: solid;
+  padding: 15px;
+  /* border-radius:; */
+}
 
 /* footer section  */
 .footer {
