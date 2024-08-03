@@ -178,8 +178,9 @@ body {
 }
 
 /* Testimonials */
-
-
+.pagination:active{
+   color: #87888d;
+}
 
 /* faq section  */
 
