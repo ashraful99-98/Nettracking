@@ -1,26 +1,17 @@
-let searchBtn = document.querySelector('#search-btn');
-let searchForm = document.querySelector('.header .search-form');
+var acc = document.getElementsByClassName("question");
+var i;
 
-searchBtn.onclick = () =>{
-   searchBtn.classList.toggle('fa-times');
-   searchForm.classList.toggle('active');
-   menuBtn.classList.remove('fa-times');
-   navbar.classList.remove('active');
-}
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    this.classList.toggle("active");
+    this.parentElement.classList.toggle("active");
 
-let menuBtn = document.querySelector('#menu-btn');
-let navbar = document.querySelector('.header .navbar');
+    var pannel = this.nextElementSibling;
 
-menuBtn.onclick = () =>{
-   menuBtn.classList.toggle('fa-times');
-   navbar.classList.toggle('active');
-   searchBtn.classList.remove('fa-times');
-   searchForm.classList.remove('active');
-}
-
-window.onscroll = () =>{
-   searchBtn.classList.remove('fa-times');
-   searchForm.classList.remove('active');
-   menuBtn.classList.remove('fa-times');
-   navbar.classList.remove('active');
+    if (pannel.style.display === "block") {
+      pannel.style.display = "none";
+    } else {
+      pannel.style.display = "block";
+    }
+  });
 }
