@@ -178,9 +178,6 @@ body {
 }
 
 /* Testimonials */
-.pagination:active{
-   color: #87888d;
-}
 
 /* faq section  */
 
@@ -229,21 +226,23 @@ body {
 /* footer section  */
 .footer {
   background-color: #12141d;
-  height: 363px;
 }
-.footer-divs {
-  display: -ms-grid;
+
+.footer .box-container{
   display: grid;
-  -ms-grid-columns: (minmax(20px, 1fr)) [auto-fit];
-  grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
-  gap: 40px;
-}
-.footer-div {
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 20px;
+  padding-top: 109px;
   margin-left: 100px;
-  margin-top: 109px;
   margin-bottom: 50px;
 }
-.footer-div h4 {
+
+.box{
+  /* margin-left: 100px; */
+  margin-bottom: 10px;
+}
+
+.box h4 {
   font-size: 24px;
   font-weight: 700;
   line-height: 30px;
@@ -252,7 +251,7 @@ body {
   margin-bottom: 12px;
 }
 
-.footer-div h5 {
+.box h5 {
   font-size: 16px;
   font-weight: 500;
   line-height: 19px;
@@ -260,19 +259,18 @@ body {
   margin-bottom: 26px;
 }
 
-.footer-div p {
+.box p {
   color: #696b76;
   font-size: 14px;
   font-weight: 400;
   margin-bottom: 20px;
 }
 
-.footer-div .icon-tag {
+.box .icon-tag {
   display: flex;
   color: #434550;
 }
-
-.footer-div .icon-tag a {
+.box .icon-tag a {
   color: #434550;
   text-decoration: none;
   margin-right: 15px;
@@ -285,16 +283,16 @@ body {
   line-height: 19px;
 }
 
-.footer-small-test {
+.footer .credit{
+  margin-top: 12px;
+  padding:10px;
+  padding-top: 12px;
+  text-align: center;
   background-color: #1e2029;
   color: #5a5c68;
-  height: 50px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
 }
-.footer-small-test small {
+
+.footer .credit span{
   font-weight: 400;
   size: 12px;
   line-height: 14.52px;
