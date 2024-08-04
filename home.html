@@ -22,114 +22,39 @@
 <body>
 
     <!-- header section starts  -->
+    <header class=" header  bg-[#12141D]">
+        <nav class="flex items-center justify-between px-12 h-16 lg:gap-8">
+            <div class="text-[#fff]">
+                <a href="#home" class="whitespace-nowrap">Nettracking</a>
+            </div>
+    
+            <div class="dropdown-menu absolute -top-full left-0 max-lg:bg-[#12141D] w-full flex flex-col gap-6 items-center py-3  lg:static lg:flex-row lg:justify-between">
+                <ul class="flex flex-col items-center gap-6 lg:flex-row lg:gap-8 text-[#fff]">
 
-    <nav class="bg-[#12141D]">
-        <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-            <div class="relative flex h-16 items-center justify-between">
-                <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
-                    <!-- Mobile menu button-->
-                    <button type="button"
-                        class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-                        aria-controls="mobile-menu" aria-expanded="false">
-                        <span class="absolute -inset-0.5"></span>
-                        <span class="sr-only">Open main menu</span>
-                        <!--
-              Icon when menu is closed.
-  
-              Menu open: "hidden", Menu closed: "block"
-            -->
-                        <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                        </svg>
-                        <!--
-              Icon when menu is open.
-  
-              Menu open: "block", Menu closed: "hidden"
-            -->
-                        <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
-                    <div class="flex flex-shrink-0 items-center">
-                        <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                            alt="Your Company">
-                    </div>
-                    <div class="hidden sm:ml-6 sm:block">
-                        <div class="flex space-x-4">
-                            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                            <a href="#" class="rounded-md bg-gray-900 px-3 py-2 text-sm font-medium text-white"
-                                aria-current="page">Features</a>
-                            <a href="#"
-                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Pricing</a>
-                            <a href="#"
-                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">How
-                                it works</a>
-                            <a href="#"
-                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Knowledge
-                                base</a>
-                            <a href="#"
-                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Knowledge
-                                base</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                    <button type="button"
-                        class=" px-3 py-2 text-sm text-gray-300 hover:bg-gray-700 hover:text-white mr-4 rounded font-bold ">Sign
-                        In</button>
-                    <button type="button"
-                        class=" px-3 py-2 text-sm text-black bg-white hover:bg-gray-700 hover:text-white rounded font-bold ">Sign
-                        Up</button>
+                    <li class=""><a href="#features" class="text-[#FFFFFF] text-[13px] active:font-[600] font-[500]">Features</a></li>     
+                    <li class=""><a href="#pricing" class="text-[#FFFFFF] text-[13px] font-[600]">Pricing</a></li>     
+                    <li class=""><a href="#howitworks" class="text-[#FFFFFF] text-[13px] font-[500]">How it works</a></li>         
+                    <li class=""><a href="#knowledgebase" class="text-[#FFFFFF] text-[13px] font-[500]">Knowledge base</a></li>     
+                    <li class=""><a href="#FAQ" class="text-[#FFFFFF] text-[13px] font-[500]">FAQ</a></li>     
+                        
+                </ul>
+    
+                <div class=" items-center gap-6 lg:flex-row lg:gap-8">
+                    <button type="button" class="px-3 py-2 text-[13px] font-[600] text-gray-300 hover:bg-gray-700 hover:text-white mr-4 rounded font-bold">Sign In</button>
+                    <button type="button" class="px-3 py-2 text-[13px] font-[600] text-black bg-white hover:bg-gray-700 hover:text-white rounded font-bold">Sign Up</button>
                 </div>
             </div>
-        </div>
-
-        <!-- Mobile menu, show/hide based on menu state. -->
-        <div class="sm:hidden" id="mobile-menu">
-            <div class="space-y-1 px-2 pb-3 pt-2">
-                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <a href="#" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white"
-                    aria-current="page">Dashboard</a>
-                <a href="#"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Team</a>
-                <a href="#"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Projects</a>
-                <a href="#"
-                    class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Calendar</a>
+    
+            <div class="toggle-button text-[#fff] lg:hidden">
+                <i class="fa fa-bars fa-lg"></i>
             </div>
-        </div>
-    </nav>
-
-    <!-- <header class="header">
-
-        <div id="menu-btn" class="fas fa-bars icons"></div>
-       
-        <nav class="navbar">
-           <a href="#home">home</a>
-           <a href="#menu">menu</a>
-           <a href="#about">about</a>
-           <span class="space"></span>
-           <a href="#reviews">reviews</a>
-           <a href="#contact">contact</a>
-           <a href="#blogs">blogs</a>
         </nav>
-  
-        <a href="#" class="fas fa-shopping-cart icons"></a>
-  
-        <a href="#home" class="logo"><img src="images/5904703.webp" alt=""></a>
-  
-     </header> -->
-
+    </header>
     <!-- header section ends  -->
 
     <!-- landing page section start  -->
 
-    <div class="home-div bg-[#12141D]">
+    <div class="home-div bg-[#12141D] pt-20">
         <div class="mx-auto max-w-2xl py-14  px-2 sm:px-6 lg:px-8">
             <h1> Content marketing solution & idea of your business</h1>
             <p class="mt-2">Nettracking is a content marketing solution that tracks the effectiveness of your blog,</p>
@@ -143,7 +68,7 @@
 
     <!-- Key features -->
 
-    <div class="features-div bg-[#12141D]">
+    <div class="features-div bg-[#12141D]" id="features">
         <div class="mx-auto max-w-7xl py-14  px-2 sm:px-6 lg:px-8">
             <div class="mx-auto max-w-2xl  text-center mb-20 ">
                 <h1>Key features</h1>
@@ -151,7 +76,7 @@
                     over 600 clients around the world</p>
             </div>
             <div
-                class="grid grid-cols-3 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2 gap-20 lg:gap-20 md:gap-18 sm:gap-6 bg-[#1E2029] rounded-lg py-24 px-24">
+                class="grid 2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-2  gap-20 lg:gap-20 md:gap-18 sm:gap-6 bg-[#1E2029] rounded-lg py-24 px-24 ">
                 <div class="">
                     <div class="mb-4 p-2  rounded-full bg-[#0F161B] hover:bg-[#FF7661] w-[61px] h-[61px]">
                         <i class='fas fa-book-open w-full h-full text-white  flex justify-center items-center
@@ -241,7 +166,7 @@
                     that allows customers to track their package</p>
             </div>
             <div
-                class="grid grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-10 lg:gap-6 md:gap-8 sm:gap-4">
+                class="grid 2xl:grid-cols-2 xl:grid-cols-2 lg:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 gap-10 lg:gap-6 md:gap-8 sm:gap-4">
                 <div
                     class="bg-[#1E2029] px-16 py-10 pt-10 justify-start justify-items-start content-start items-start rounded-3xl h-full">
                     <div class="grid grid-cols-4 gap-2 mb-16">
@@ -280,13 +205,13 @@
 
     <!-- how to work  -->
 
-    <div class=" features-div bg-[#12141D]">
+    <div class=" features-div bg-[#12141D]" id="howitworks">
         <div class="mx-auto max-w-7xl py-14  px-2 sm:px-6 lg:px-8">
             <div class="mx-auto max-w-2xl text-center mb-20">
                 <h1>How it works</h1>
             </div>
             <div
-                class="grid grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-10 lg:gap-6 md:gap-8 sm:gap-4 bg-[#1E2029] px-20 py-14 lg:px-20 md:px-10 sm:px-4 rounded-3xl justify-items-center">
+                class="grid 2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-3 sm:grid-cols-1 gap-10 lg:gap-6 md:gap-8 sm:gap-4 bg-[#1E2029] px-20 py-14 lg:px-20 md:px-10 sm:px-4 rounded-3xl justify-items-center">
                 <div class="justify-start justify-items-start content-start items-start sm:mb-10 ">
                     <div
                         class="p-2  rounded-full bg-[#0F161B] hover:bg-[#FF7661] text-[#FFFFFF] w-[61px] h-[61px] mb-6">
@@ -361,7 +286,7 @@
 
     <!-- Our pricing plan -->
 
-    <div class=" features-div bg-[#12141D]">
+    <div class=" features-div bg-[#12141D]" id="pricing">
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
             <div class="mx-auto max-w-2xl text-center mb-8">
                 <h1 class="mb-3">Our pricing plan</h1>
@@ -369,7 +294,7 @@
                     online sales efforts.</p>
             </div>
             <div
-                class="grid grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8 lg:gap-4 md:gap-8 sm:gap-4 px-20 py-14 lg:px-20 md:px-10 sm:px-4 rounded-3xl justify-items-center">
+                class="grid 2xl:grid-cols-3 xl:grid-cols-3 lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-8 lg:gap-4 md:gap-8 sm:gap-4 px-20 py-14 lg:px-20 md:px-10 sm:px-4 rounded-3xl justify-items-center">
                 <div
                     class="justify-start justify-items-start content-start items-start sm:mb-10 bg-[#1E2029] px-12 py-8 rounded-xl ">
                     <div class="mb-6">
@@ -489,7 +414,10 @@
         <div class="mx-auto max-w-7xl py-14 text-center bg-[#1E2029] rounded-3xl ">
             <span class=" flex items-center  justify-center mb-10">
                 <h1 class=" mr-2 text-[42px]"> Compare All Plan Features</h1>
-                <i class='fas fa-angle-down cursor-pointer' style="color:#ACA6A6; font-size:30px;"></i>
+                <div class="2xl:block xl:block lg:block md:block sm:hidden">
+                    <i class='fas fa-angle-down cursor-pointer' style="color:#ACA6A6; font-size:30px;"></i>
+
+                </div>
             </span>
             <p class="mt-2 text-[#FFFFFF] text-[20px] font-[500] mb-2">We accept</p>
             <div class=" flex justify-center mb-4">
@@ -522,7 +450,6 @@
         </div>
     </div>
     </div>
-
     <div class=" features-div bg-[#12141D] py-10">
         <div class="mx-auto max-w-7xl py-16 bg-gradient-to-b from-[#FF7763] to-[#EA6955] px-10 rounded-3xl">
             <div class="mx-auto max-w-4xl text-center items-center">
@@ -540,8 +467,6 @@
         </div>
     </div>
     </div>
-
-
 
     <!-- Testimonials section starts  -->
 
@@ -629,15 +554,15 @@
 
                     </div>
                 </div>
-                <!-- <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div> -->
-            <div class="swiper-pagination pagination"></div>    
+                <!-- <div class="swiper-button-next 2xl:visible  xl:visible lg:visible md:visible sm:invisible"></div>
+                <div class="swiper-button-prev 2xl:visible  xl:visible lg:visible md:visible sm:invisible"></div> -->
+                <div class="swiper-pagination pagination"></div>    
             </div>
         </div>
     </div>
     
     <!-- FAQ section  -->
-    <div class=" features-div bg-[#12141D] ">
+    <div class=" features-div bg-[#12141D] " id="FAQ">
         <div class="mx-auto max-w-7xl py-2 px-2 sm:px-6 lg:px-8">
             <div class="mx-auto max-w-2xl text-center mb-8">
                 <h1 class="mb-3 text-[42px]">Frequently Asked Questions</h1>
@@ -756,6 +681,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
 
     <script>
+
+        const toggleBtn = document.querySelector(".toggle-button");
+
+        const dropdown = document.querySelector(".dropdown-menu");
+
+        toggleBtn.addEventListener("click", ()=>{
+            dropdown.classList.toggle('top-16');
+        });
+
         var swiper = new Swiper(".testimonials-slider", {
             spaceBetween: 10,
             grabCursor:true,
