@@ -13,6 +13,8 @@
 }
 
 body {
+  max-height: fit-content;
+  background-color: #12141D;
   background-attachment: fixed;
   background-position: center;
   overflow-x: hidden;
@@ -174,7 +176,7 @@ body {
 
 .footer .box-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
   gap: 20px;
   padding-top: 109px;
   margin-left: 100px;
